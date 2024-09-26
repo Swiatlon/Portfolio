@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
-import Globe from "react-globe.gl";
+import dynamic from "next/dynamic";
 import Button from "@/app/components/shared/button/Button";
 import { useMediaQuery } from "react-responsive";
+
+const Globe = dynamic(() => import("react-globe.gl"), { ssr: false });
 
 const GlobeSection = () => {
   const isPhone = useMediaQuery({ maxWidth: 450 });
