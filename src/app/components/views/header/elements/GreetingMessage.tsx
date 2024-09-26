@@ -10,7 +10,7 @@ const GreetingMessage = () => {
       <h2
         className="
           text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold !leading-normal tracking-wide
-          bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent
+          text-gray_gradient
         "
       >
         Building Websites & Apps
