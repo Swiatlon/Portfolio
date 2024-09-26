@@ -17,11 +17,59 @@ body {
   .c-space {
     @apply sm:px-10 px-5;
   }
+
   .max-content {
     @apply max-w-7xl;
   }
 
-  .nav-sidebar {
-    @apply absolute left-0 right-0 top-16 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+  .grid-container {
+    @apply border border-black-300 bg-black-200 rounded-lg flex flex-col gap-5;
+  }
+
+  .grid-headtext {
+    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+  }
+
+  .grid-subtext {
+    @apply text-[#afb0b6] text-base font-generalsans sm:w-9/12;
+  }
+
+  .copy-container {
+    @apply cursor-pointer flex  gap-2;
+  }
+}
+
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

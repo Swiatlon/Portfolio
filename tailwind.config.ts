@@ -37,9 +37,6 @@ const config: Config = {
   plugins: [
     function ({ addUtilities }: PluginAPI) {
       addUtilities({
-        ".customHidden": {
-          display: "none",
-        },
         ".importantPanY": {
           "touch-action": "pan-y !important",
         },

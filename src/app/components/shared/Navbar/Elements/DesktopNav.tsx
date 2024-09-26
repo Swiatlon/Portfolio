@@ -3,7 +3,7 @@ import NavItems from "./NavItems";
 
 const DesktopNav = () => {
   return (
-    <nav className="customHidden sm:flex">
+    <nav className="hidden sm:flex">
       <NavItems />
     </nav>
   );
