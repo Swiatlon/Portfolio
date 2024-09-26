@@ -1,3 +1,4 @@
+import Footer from "./components/shared/footer/footer";
 import { Navbar } from "./components/shared/navbar/Navbar";
 import About from "./components/views/about/About";
 import Contact from "./components/views/contact/Contact";
@@ -14,6 +15,7 @@ export default function Home() {
         <Projects />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

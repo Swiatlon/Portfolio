@@ -5,7 +5,7 @@ import ContactForm from "./elements/ContactForm";
 const Contact = () => {
   return (
     <section
-      className="c-space space-bettwen-projects  space-bettwen-section grid place-items-center"
+      className="c-space space-bettwen-projects space-bettwen-section grid place-items-center"
       id="contact"
     >
       <SnackbarProvider
