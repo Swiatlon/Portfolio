@@ -1,4 +1,4 @@
-import { Navbar } from "./components/shared/navbar/Navbar";
+import { Navbar } from "./components/shared/navbar/navbar";
 import About from "./components/views/about/About";
 import Header from "./components/views/header/Header";
 
