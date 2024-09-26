@@ -4,7 +4,10 @@ import GlobeSection from "./elements/GlobeSection";
 
 const About = () => {
   return (
-    <section className="c-space space-bettwen-section grid place-items-center">
+    <section
+      className="c-space space-bettwen-section grid place-items-center"
+      id="about"
+    >
       <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5 w-10/12 sm-11/12 xl:w-10/12">
         <AboutCard
           imgSrc="/assets/images/grid1.png"

@@ -19,7 +19,7 @@ body {
   }
 
   .space-bettwen-section {
-    @apply mt-28 xl:mt-60;
+    @apply pt-24 xl:pt-48;
   }
 
   .text-gray_gradient {

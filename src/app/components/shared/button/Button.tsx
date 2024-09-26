@@ -1,3 +1,4 @@
+import { scrollToSection } from "@/utils/utils";
 import React from "react";
 
 interface ButtonProps {
@@ -15,6 +16,10 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type="button"
       className={`flex gap-4 items-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white ${containerClass}`}
+      onClick={(e) => {
+        e.preventDefault();
+        scrollToSection("#contact");
+      }}
     >
       {isBeam && (
         <span className="relative flex h-3 w-3">

@@ -5,7 +5,10 @@ import HeaderBackground from "./elements/HeaderBackground";
 
 const Header = () => {
   return (
-    <section className="min-h-screen w-full flex flex-col relative gap-3">
+    <section
+      className="min-h-screen w-full flex flex-col relative gap-3"
+      id="home"
+    >
       <GreetingMessage />
       <Attribution />
       <HeaderBackground />
