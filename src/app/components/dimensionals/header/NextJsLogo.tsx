@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
@@ -22,10 +22,6 @@ interface LogoProps {
 
 function Logo({ position, scale }: LogoProps) {
   const [hovered, setHovered] = useState<boolean>(false);
-
-  useEffect(() => {
-    document.body.style.cursor = hovered ? "pointer" : "auto";
-  }, [hovered]);
 
   return (
     <group

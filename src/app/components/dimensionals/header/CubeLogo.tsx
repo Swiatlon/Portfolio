@@ -71,10 +71,6 @@ function Logo({ position, scale, text, color }: LogoProps) {
     });
   }, [textScale, cubeSize, text]);
 
-  useEffect(() => {
-    document.body.style.cursor = hovered ? "pointer" : "auto";
-  }, [hovered]);
-
   return (
     <group
       position={position}

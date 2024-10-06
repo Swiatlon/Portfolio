@@ -1,13 +1,10 @@
-import AboutCard from "./elements/AboutCard";
-import ContactInfo from "./elements/ContactInfo";
-import GlobeSection from "./elements/GlobeSection";
+import AboutCard from './elements/AboutCard';
+import ContactInfo from './elements/ContactInfo';
+import GlobeSection from './elements/GlobeSection';
 
 const About = () => {
   return (
-    <section
-      className="c-space space-bettwen-section grid place-items-center"
-      id="about"
-    >
+    <section className="c-space space-bettwen-section grid place-items-center" id="about">
       <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5 w-10/12 sm-11/12 xl:w-10/12">
         <AboutCard
           imgSrc="/assets/images/grid1.png"
@@ -29,6 +26,12 @@ const About = () => {
           text="I love solving problems and building things through code. Programming isn’t just my profession—it’s my passion. I enjoy exploring new technologies and enhancing my skills."
         />
         <ContactInfo />
+        <AboutCard
+          imgSrc="/assets/images/grid5.png"
+          imgAlt="Charts rising"
+          header="Quality Matters"
+          text="Quality is the cornerstone of my work. I prioritize precision and excellence in every app and website I create, ensuring that each project delivers exceptional performance and lasting value."
+        />
       </div>
     </section>
   );
