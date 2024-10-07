@@ -57,6 +57,25 @@ body {
   .social-icon {
     @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
   }
+
+  .tech-logo {
+    @apply relative overflow-hidden inline-block rounded transition-transform duration-300 ease-in-out;
+  }
+
+  .tech-logo:hover {
+    @apply scale-105;
+  }
+
+  .tech-logo::before {
+    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0;
+    content: "";
+    transform: translateX(-100%);
+  }
+
+  .tech-logo:hover::before {
+    @apply opacity-50;
+    animation: shine 0.75s forwards;
+  }
 }
 
 .waving-hand {
@@ -65,6 +84,15 @@ body {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes wave-animation {
