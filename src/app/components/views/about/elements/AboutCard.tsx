@@ -23,7 +23,7 @@ const AboutCard: React.FC<AboutCardProps> = ({
           title={imgAlt}
           width={700}
           height={0}
-          className="w-10/12 sm:w-3/4 sm:h-[256px] md:h-[300px] h-fit object-contain max-w-[300px]"
+          className="w-10/12 sm:w-3/4 sm:h-[220px] h-fit object-contain max-w-[220px]"
         />
         <header className="text-pretty text-center grid place-items-center">
           <h3 className="grid-headtext">{header}</h3>

@@ -10,12 +10,12 @@ const GlobeSection = () => {
   const isPhone = useMediaQuery({ maxWidth: 450 });
 
   return (
-    <article className="text-center grid-container place-items-center">
+    <article className="text-center grid-container place-items-center pb-7">
       <div className="grid p-7 gap-12">
-        <div className="rounded-3xl w-full sm:h-[256px] md:h-[267px] h-fit flex justify-center items-center">
+        <div className="rounded-3xl w-full sm:h-[190px] h-fit flex justify-center items-center">
           <Globe
-            height={isPhone ? 150 : 300}
-            width={isPhone ? 150 : 300}
+            height={isPhone ? 150 : 210}
+            width={isPhone ? 150 : 210}
             backgroundColor="rgba(0, 0, 0, 0)"
             showAtmosphere
             showGraticules
