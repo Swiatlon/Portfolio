@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState } from "react";
 import * as THREE from "three";
 import { Text } from "@react-three/drei";
 
