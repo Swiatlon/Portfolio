@@ -17,7 +17,7 @@ export const Navbar = () => {
           <LogoLink />
           <MobileMenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
           <DesktopNav />
-          <MobileNav isOpen={isOpen} />
+          <MobileNav isOpen={isOpen} toggleMenu={toggleMenu} />
         </div>
       </div>
     </header>

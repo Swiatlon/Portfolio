@@ -33,7 +33,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
         <div className="flex items-center gap-3">
           {project.tags.map((tag, index) => (
             <div key={index} className="tech-logo">
-              <Image src={tag.path} alt={tag.name} width={30} height={30} />
+              <Image
+                src={tag.path}
+                alt={tag.name}
+                width={30}
+                height={30}
+                title={tag.name}
+              />
             </div>
           ))}
         </div>

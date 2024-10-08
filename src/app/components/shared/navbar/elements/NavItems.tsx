@@ -2,7 +2,7 @@ import React from "react";
 import { navLinks } from "@/app/constants/constants";
 import { scrollToSection } from "@/utils/utils";
 
-const NavItems = () => {
+const NavItems = ({ toggleMenu }: { toggleMenu?: () => void }) => {
   return (
     <ul className="flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative">
       {navLinks.map(({ id, href, name }) => (
@@ -16,6 +16,7 @@ const NavItems = () => {
             tabIndex={0}
             onClick={(e) => {
               e.preventDefault();
+              toggleMenu?.();
               scrollToSection(href);
             }}
           >

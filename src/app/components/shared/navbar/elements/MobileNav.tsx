@@ -4,9 +4,10 @@ import NavItems from "./NavItems";
 
 interface MobileMenuButtonProps {
   isOpen: boolean;
+  toggleMenu: () => void;
 }
 
-const MobileNav = ({ isOpen }: MobileMenuButtonProps) => {
+const MobileNav = ({ isOpen, toggleMenu }: MobileMenuButtonProps) => {
   return (
     <nav
       id="mobile-menu"
@@ -15,7 +16,7 @@ const MobileNav = ({ isOpen }: MobileMenuButtonProps) => {
       } sm:hidden`}
       aria-hidden={!isOpen}
     >
-      <NavItems />
+      <NavItems toggleMenu={toggleMenu} />
     </nav>
   );
 };
