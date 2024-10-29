@@ -12,6 +12,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
       <button
         type="button"
         className="arrow-btn"
+        disabled
         onClick={() => onNavigate("previous")}
       >
         <Image
@@ -25,6 +26,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
       <button
         type="button"
         className="arrow-btn"
+        disabled
         onClick={() => onNavigate("next")}
       >
         <Image

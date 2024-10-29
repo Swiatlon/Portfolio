@@ -9,18 +9,18 @@ export const metadata: Metadata = {
     title: "Przemyslaw Swiatlon 3D Portfolio",
     description:
       "Explore the cutting-edge 3D designs and projects by Przemyslaw Swiatlon. Showcasing skills in 3D modeling, design, and more.",
-    url: "https://portfolio-rho-vert-98.vercel.app/",
+    url: "https://portfolio-swiatlons-projects.vercel.app/",
     type: "website",
     siteName: "Przemyslaw Swiatlon",
     locale: "en_US",
-    // images: [
-    //   {
-    //     url: "https://yourwebsite.com/images/yourimage.jpg",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "Portfolio Image",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://portfolio-swiatlons-projects.vercel.app/assets/images/preview.png",
+        width: 400,
+        height: 400,
+        alt: "Developer",
+      },
+    ],
   },
   // alternates: {
   //   canonical: (pageUrl) => `https://yourwebsite.com`,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  manifest: "https://yourwebsite.com/manifest.json",
+  // manifest: "https://yourwebsite.com/manifest.json",
   category: "technology",
   robots: {
     index: true,
