@@ -11,13 +11,13 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: "Contact",
-    href: "#contact",
+    name: "Experience",
+    href: "#experience",
   },
   {
     id: 4,
-    name: "Experience (Cooming soon)",
-    href: "#experience",
+    name: "Contact",
+    href: "#contact",
   },
 ];
 

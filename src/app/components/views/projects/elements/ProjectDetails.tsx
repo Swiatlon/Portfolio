@@ -9,7 +9,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   return (
     <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl">
       <div
-        className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg"
+        className="p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg ml-auto mr-auto md:ml-0"
         style={project.logoStyle}
       >
         <Image

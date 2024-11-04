@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5 mt-24 xl:mt-48">
+    <footer className="c-space pt-7 pb-3 border-t border-black-300 grid justify-items-center md:flex justify-center items-center flex-wrap gap-5 mt-24 xl:mt-48">
       <nav aria-label="Legal links">
         <ul className="text-white-500 flex gap-2">
           <li>
