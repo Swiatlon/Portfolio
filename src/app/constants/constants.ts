@@ -34,8 +34,8 @@ export const myProjects = [
       border: "0.2px solid #010202",
       boxShadow: "0px 0px 40px 0px #007acc",
     },
-    spotlight: "/assets/images/spotlight_university.png",
-    texture: "/assets/images/projects/university_dashboard.png",
+    spotlight: "/assets/images/spotlight4.png",
+    texture: "/assets/images/projects/university.PNG",
     tags: [
       {
         id: 1,
@@ -56,6 +56,11 @@ export const myProjects = [
         id: 4,
         name: "TypeScript",
         path: "/assets/icons/typescript.svg",
+      },
+      {
+        id: 5,
+        name: "Redux",
+        path: "/assets/icons/redux.svg",
       },
     ],
   },
