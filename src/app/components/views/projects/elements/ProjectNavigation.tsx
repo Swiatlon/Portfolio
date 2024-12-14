@@ -11,7 +11,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
     <div className="flex justify-between items-center">
       <button
         type="button"
-        className="arrow-btn"
+        className="arrow-btn hover:filter hover:invert hover:brightness-0 hover:contrast-100"
         onClick={() => onNavigate("previous")}
       >
         <Image
@@ -24,7 +24,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
 
       <button
         type="button"
-        className="arrow-btn"
+        className="arrow-btn hover:filter hover:invert hover:brightness-0 hover:contrast-100"
         onClick={() => onNavigate("next")}
       >
         <Image

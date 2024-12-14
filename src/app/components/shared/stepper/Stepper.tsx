@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
@@ -9,25 +9,45 @@ const steps = [
     description:
       "At Farmaprom, I developed pharmaceutical applications, focusing on performance, compatibility, and responsiveness. I collaborated closely with UX/UI teams to build intuitive interfaces, created dynamic React components, and maintained high-quality code. Through Agile practices, I participated in sprint planning and code reviews, contributing to a collaborative and efficient workflow. This role allowed me to enhance my skills and pursue innovative solutions that elevated the platform.",
     url: "/assets/icons/farmaprom.png",
-    years: 1.5,
+    startDate: new Date("2023-06-01"), 
     active: true,
   },
   {
     title: "Step 2",
     description: "Billing Information",
     url: "",
+    startDate: null, 
     active: false,
   },
   {
     title: "Step 3",
     description: "Summary",
     url: "",
+    startDate: null,
     active: false,
   },
 ];
 
 const Stepper = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const [years, setYears] = useState(0);
+
+  const calculateYears = (startDate: Date) => {
+    const currentDate = new Date();
+    const diffInTime = currentDate.getTime() - startDate.getTime();
+    const yearsInMilliseconds = 1000 * 3600 * 24 * 365;
+
+    return (diffInTime / yearsInMilliseconds).toFixed(1);
+  };
+
+
+  useEffect(() => {
+    const currentStep = steps[activeStep];
+
+    if (currentStep.startDate) {
+      setYears(parseFloat(calculateYears(currentStep.startDate)));
+    }
+  }, [activeStep]);
 
   return (
     <div className="flex gap-8 justify-center align pt-12">
@@ -71,7 +91,7 @@ const Stepper = () => {
           {steps[activeStep].title}
         </h2>
         <p className="text-blue-400 font-bold">
-          Experience: {steps[activeStep]?.years} years
+          Experience: {years} years
         </p>
         <p className="text-white-700 text-md md:text-lg tracking-wider pt-6">
           {steps[activeStep].description}

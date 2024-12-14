@@ -11,11 +11,16 @@ export const navLinks = [
   },
   {
     id: 3,
+    name: "Projects",
+    href: "#projects",
+  },
+  {
+    id: 4,
     name: "Experience",
     href: "#experience",
   },
   {
-    id: 4,
+    id: 5,
     name: "Contact",
     href: "#contact",
   },
@@ -25,8 +30,8 @@ export const myProjects = [
   {
     title: "University Management System",
     desc: "A feature-rich platform designed to efficiently manage university operations, including student profiles, course details, and grade analysis. It provides a seamless user experience for students, faculty, and administrators.",
-    subdesc:
-      "Built using React, Node.js, SQL, and TypeScript, the system emphasizes scalability and usability. The backend handles complex queries, data migrations, and validations, while the frontend offers a responsive interface with detailed visuals, ensuring accessibility across devices. Key modules include academic information management, personalized profiles, course schedules, and performance dashboards.",
+    subdesc: 
+      "Built using React, Node.js, SQL, and TypeScript, the system emphasizes scalability and usability. The backend handles complex queries, data migrations, and validations, while the frontend offers a responsive interface with detailed visuals, ensuring accessibility across devices. Key modules include academic information management, personalized profiles, course schedules, and performance dashboards. The app is rigorously tested for reliability and performance. Jest is used for unit testing to ensure individual components function correctly. End-to-End (E2E) testing validates complete workflows, ensuring smooth user experiences. Additionally, Cypress is employed for component-level testing, ensuring that frontend interactions are seamless across devices.",
     href: "https://university-swiatlons-projects.vercel.app/",
     logo: "/assets/icons/react.svg",
     logoStyle: {
@@ -61,6 +66,16 @@ export const myProjects = [
         id: 5,
         name: "Redux",
         path: "/assets/icons/redux.svg",
+      },
+      {
+        id: 6,
+        name: "Jest",
+        path: "/assets/icons/jest.svg",
+      },
+      {
+        id: 7,
+        name: "Cypress",
+        path: "/assets/icons/cypress.svg",
       },
     ],
   },

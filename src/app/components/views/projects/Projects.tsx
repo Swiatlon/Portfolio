@@ -51,7 +51,7 @@ export const Projects: React.FC = () => {
   const currentProject: Project = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space space-bettwen-section grid place-items-center">
+    <section className="c-space space-bettwen-section grid place-items-center" id="projects">
       <div className="w-10/12 sm-11/12 xl:w-10/12">
         <p className="sm:text-4xl text-3xl font-semibold text-gray_gradient text-center">
           My Selected Work
